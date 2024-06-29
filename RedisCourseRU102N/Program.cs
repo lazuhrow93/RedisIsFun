@@ -7,8 +7,8 @@ Console.WriteLine("Hello, World!");
 
 var newConfig = new ConfigurationOptions()
 {
-    EndPoints = {"redis-13915.c53.west-us.azure.redns.redis-cloud.com:13915"},
-    Password = "uU0PMXsltK1CYaQiJay0Oser106obXY2",
+    EndPoints = { SensitiveInformation.GetConnectionString() },
+    Password = SensitiveInformation.GetPassword()
 };
 
 
