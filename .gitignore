@@ -1,0 +1,23 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite-journal
+/.vs/slnx.sqlite
+/.vs/RedisIsFun/v17/.wsuo
+/.vs/RedisIsFun/v17
+/.vs/RedisIsFun/FileContentIndex/read.lock
+/.vs/RedisIsFun/FileContentIndex/56599e26-c938-4832-9c42-fe71d09a3cb9.vsidx
+/.vs/RedisIsFun/FileContentIndex/11f0f09a-58bc-476a-a5c9-7a77d4b13c8c.vsidx
+/.vs/RedisIsFun/FileContentIndex/a4f83f01-ecda-4938-bbcd-45058fd8ed0d.vsidx
+/.vs/RedisIsFun/FileContentIndex
+/RedisCourseRU102N/bin/Debug/net7.0
+/RedisCourseRU102N/.vs
+/RedisCourseRU102N/obj/Debug/net7.0
+/RedisCourseRU102N/obj/Release/net7.0
+/RedisCourseRU102N/obj/RedisCourseRU102N.csproj.nuget.g.targets
+/RedisCourseRU102N/obj/RedisCourseRU102N.csproj.nuget.g.props
+/RedisCourseRU102N/obj/RedisCourseRU102N.csproj.nuget.dgspec.json
+/RedisCourseRU102N/obj/project.nuget.cache
+/RedisCourseRU102N/obj/project.assets.json
