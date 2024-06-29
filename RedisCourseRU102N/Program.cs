@@ -7,7 +7,7 @@ Console.WriteLine("Hello, World!");
 
 var newConfig = new ConfigurationOptions()
 {
-    EndPoints = { SensitiveInformation.GetConnectionString() },
+    EndPoints = { SensitiveInformation.GetConnectionString() }, //local class not in repo
     Password = SensitiveInformation.GetPassword()
 };
 
