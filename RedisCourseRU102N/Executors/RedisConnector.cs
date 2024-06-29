@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace RedisCourseRU102N.Controller
 {
-    public class RedisExecutor
+    public class RedisConnector
     {
         public ConnectionMultiplexer Multiplexor;
         public IDatabase Redis;
 
-        public RedisExecutor(ConfigurationOptions options)
+        public RedisConnector(ConfigurationOptions options)
         {
             Multiplexor = ConnectionMultiplexer.Connect(options);
             Redis = Multiplexor.GetDatabase();
@@ -21,6 +21,16 @@ namespace RedisCourseRU102N.Controller
         public TimeSpan Ping()
         {
             return Redis.Ping();
+        }
+
+        public Task<TimeSpan> PingAsync()
+        {
+            return Redis.PingAsync();
+        }
+
+        public IBatch StartBatch()
+        {
+            return Redis.CreateBatch();
         }
     }
 }

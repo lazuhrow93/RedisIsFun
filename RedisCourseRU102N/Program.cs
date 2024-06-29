@@ -1,4 +1,5 @@
 ﻿// See https://aka.ms/new-console-template for more information
+using RedisCourseRU102N;
 using RedisCourseRU102N.ConnectingAndPing;
 using RedisCourseRU102N.Controller;
 using StackExchange.Redis;
@@ -12,5 +13,6 @@ var newConfig = new ConfigurationOptions()
 };
 
 
-var pinger = new Executor(newConfig);
-pinger.RunPingApp();
+var pinger = new AAppController(newConfig);
+//pinger.RunPingApp();
+await pinger.RunExplicitPipelineApp();
