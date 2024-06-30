@@ -73,5 +73,11 @@ namespace RedisCourseRU102N.Controller
 
             return (element.HasValue) ? element.ToString() : null;
         }
+
+        public IEnumerable<string>? GetRange(RedisKey key, int start, int end)
+        {
+            var parsed = Redis.ListRange(key, start, end).Select(r => (string)r!);
+            return parsed;
+        }
     }
 }

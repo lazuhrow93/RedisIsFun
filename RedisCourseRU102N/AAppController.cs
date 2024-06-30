@@ -55,5 +55,10 @@ namespace RedisCourseRU102N
         {
             new PushLeftRight(_redisCommandExecutor).RunPushRightAndLeftApp();
         }
+
+        public void EnumerateABasicList()
+        {
+            new EnumeratingLists(_redisCommandExecutor).EnumeratingTheList();
+        }
     }
 }

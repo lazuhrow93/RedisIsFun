@@ -15,6 +15,8 @@ namespace RedisCourseRU102N.Controller
         TimeSpan? GetTTL(RedisKey keyName);
         void ClearKey(params string[] keysToDelete);
         void PushLeftList(string key, IEnumerable<string> vals);
+        void PushRightList(string key, IEnumerable<string> vals);
         string? GetFromList(string key, int index);
+        IEnumerable<string>? GetRange(string key, int start, int end);
     }
 }

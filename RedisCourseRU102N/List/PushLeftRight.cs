@@ -10,11 +10,11 @@ namespace RedisCourseRU102N.List
 {
     public class PushLeftRight
     {
-        private IRedisCommandExecutor _exector;
+        private IRedisCommandExecutor _executor;
 
         public PushLeftRight(IRedisCommandExecutor executor)
         {
-            _exector = executor;
+            _executor = executor;
         }
 
         public void RunPushRightAndLeftApp()
@@ -31,12 +31,19 @@ namespace RedisCourseRU102N.List
             var fruitKey = "myFruit";
             var vegetableKey = "myVegetable";
 
-            _exector.ClearKey(fruitKey, vegetableKey);
-            _exector.PushLeftList(fruitKey, fruits);
+            _executor.ClearKey(fruitKey, vegetableKey);
+            _executor.PushLeftList(fruitKey, fruits);
 
-            var randomIndex = new Random().Next(0, 4);
-            var firstFruit = _exector.GetFromList(fruitKey, randomIndex);
+            var randomIndex = 0;
+            var firstFruit = _executor.GetFromList(fruitKey, randomIndex);
             Console.WriteLine($"First fruit at index {randomIndex}: {firstFruit}");
+
+            _executor.ClearKey(fruitKey);
+            _executor.PushRightList(fruitKey, fruits);
+
+            firstFruit = _executor.GetFromList(fruitKey, randomIndex);
+
+            Console.WriteLine($"But we push right the fruit at index[{randomIndex}]: {firstFruit}");
         }
     }
 }

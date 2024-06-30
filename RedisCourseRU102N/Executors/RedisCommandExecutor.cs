@@ -87,5 +87,10 @@ namespace RedisCourseRU102N.Controller
         {
             return _redisExecutor.GetFromList(key, index);
         }
+
+        public IEnumerable<string>? GetRange(string key, int start, int end)
+        {
+            return _redisExecutor.GetRange(new RedisKey(key), start, end);
+        }
     }
 }
