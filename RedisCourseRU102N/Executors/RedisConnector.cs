@@ -32,5 +32,23 @@ namespace RedisCourseRU102N.Controller
         {
             return Redis.CreateBatch();
         }
+
+        public void SetString(RedisKey keyName, string value, TimeSpan? timeToExpire)
+        {
+            if (timeToExpire is null)
+                Redis.StringSet(keyName, value);
+            else
+                Redis.StringSet(keyName, value, timeToExpire);
+        }
+
+        public string? GetString(RedisKey keyName)
+        {
+            return Redis.StringGet(keyName);
+        }
+
+        public TimeSpan? GetTTLForString(RedisKey keyName)
+        {
+            return Redis.KeyTimeToLive(keyName);
+        }
     }
 }

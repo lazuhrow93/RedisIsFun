@@ -1,6 +1,7 @@
 ﻿using RedisCourseRU102N.ConnectingAndPing;
 using RedisCourseRU102N.Controller;
 using RedisCourseRU102N.Pipeline;
+using RedisCourseRU102N.Strings;
 using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,16 @@ namespace RedisCourseRU102N
         public async Task RunExplicitPipelineApp()
         {
             await new Pipeliner(_redisCommandExecutor).ExplicitPipeline();
+        }
+
+        public void RunBasicGetSetString()
+        {
+            new RedisSetterAndGetter(_redisCommandExecutor).BasicSetAndGetString();
+        }
+
+        public void RunBasicGetSetStringWithTTL()
+        {
+            new RedisSetterAndGetter(_redisCommandExecutor).BasicSetAndGetWithTTL();
         }
     }
 }

@@ -45,5 +45,25 @@ namespace RedisCourseRU102N.Controller
             if (_commandBatch is null) throw new Exception($"Initialize the batch first");
             _commandBatch.Execute();
         }
+
+        public void SetString(RedisKey keyName, string value)
+        {
+            _redisExecutor.SetString(keyName, value, null);
+        }
+
+        public void SetString(RedisKey keyName, string value, TimeSpan timeToExpire)
+        {
+            _redisExecutor.SetString(keyName, value, timeToExpire);
+        }
+
+        public string? GetString(RedisKey keyName)
+        {
+            return _redisExecutor.GetString(keyName);
+        }
+
+        public TimeSpan? GetTTL(RedisKey keyName)
+        {
+            return _redisExecutor.GetTTLForString(keyName);
+        }
     }
 }
