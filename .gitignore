@@ -22,3 +22,10 @@
 /RedisCourseRU102N/obj/project.nuget.cache
 /RedisCourseRU102N/obj/project.assets.json
 /RedisCourseRU102N/Controller/SensitiveInformation.cs
+/Utility/obj/Debug/net7.0
+/Utility/obj/Release/net7.0
+/Utility/obj/Utility.csproj.nuget.g.targets
+/Utility/obj/Utility.csproj.nuget.g.props
+/Utility/obj/Utility.csproj.nuget.dgspec.json
+/Utility/obj/project.nuget.cache
+/Utility/obj/project.assets.json
