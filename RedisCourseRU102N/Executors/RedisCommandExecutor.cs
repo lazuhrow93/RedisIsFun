@@ -65,5 +65,27 @@ namespace RedisCourseRU102N.Controller
         {
             return _redisExecutor.GetTTLForString(keyName);
         }
+
+        public void ClearKey(params string[] keysToDelete)
+        {
+            _redisExecutor.DeleteKeys(keysToDelete.Select(k => new RedisKey(k)).ToArray());
+        }
+
+        public void PushLeftList(string key, IEnumerable<string> vals)
+        {
+            var redisVals = vals.Select(s => new RedisValue(s));
+            _redisExecutor.PushLeftList(new RedisKey(key), redisVals.ToArray());
+        }
+
+        public void PushRightList(string key, IEnumerable<string> vals)
+        {
+            var redisVals = vals.Select(s => new RedisValue(s));
+            _redisExecutor.PushRightList(new RedisKey(key), redisVals.ToArray());
+        }
+
+        public string? GetFromList(string key, int index)
+        {
+            return _redisExecutor.GetFromList(key, index);
+        }
     }
 }

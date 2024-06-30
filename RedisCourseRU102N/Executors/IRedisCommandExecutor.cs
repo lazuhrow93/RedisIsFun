@@ -13,5 +13,8 @@ namespace RedisCourseRU102N.Controller
         void SetString(RedisKey keyName, string value, TimeSpan timeToExpire);
         string? GetString(RedisKey keyName);
         TimeSpan? GetTTL(RedisKey keyName);
+        void ClearKey(params string[] keysToDelete);
+        void PushLeftList(string key, IEnumerable<string> vals);
+        string? GetFromList(string key, int index);
     }
 }

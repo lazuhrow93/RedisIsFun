@@ -1,5 +1,6 @@
 ﻿using RedisCourseRU102N.ConnectingAndPing;
 using RedisCourseRU102N.Controller;
+using RedisCourseRU102N.List;
 using RedisCourseRU102N.Pipeline;
 using RedisCourseRU102N.Strings;
 using StackExchange.Redis;
@@ -48,6 +49,11 @@ namespace RedisCourseRU102N
         public void RunBasicGetSetStringWithTTL()
         {
             new RedisSetterAndGetter(_redisCommandExecutor).BasicSetAndGetWithTTL();
+        }
+
+        public void RunBasicPushLeftAndRightList()
+        {
+            new PushLeftRight(_redisCommandExecutor).RunPushRightAndLeftApp();
         }
     }
 }

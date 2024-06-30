@@ -1,6 +1,7 @@
 ﻿using StackExchange.Redis;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -49,6 +50,28 @@ namespace RedisCourseRU102N.Controller
         public TimeSpan? GetTTLForString(RedisKey keyName)
         {
             return Redis.KeyTimeToLive(keyName);
+        }
+
+        public void DeleteKeys(RedisKey[] keysToDelete)
+        {
+            Redis.KeyDelete(keysToDelete);
+        }
+
+        public void PushLeftList(RedisKey key, RedisValue[] vals)
+        {
+            Redis.ListLeftPush(key, vals);
+        }
+
+        public void PushRightList(RedisKey key, RedisValue[] vals)
+        {
+            Redis.ListRightPush(key, vals);
+        }
+
+        public string? GetFromList(RedisKey key, int index)
+        {
+            var element = Redis.ListGetByIndex(key, index);
+
+            return (element.HasValue) ? element.ToString() : null;
         }
     }
 }
