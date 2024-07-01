@@ -20,6 +20,7 @@ namespace RedisCourseRU102N.Strings
         public void BasicSetAndGetString()
         {
             var key = $"laz:first:Set";
+            _executor.ClearKey(key);
             var homeMadeKey = new RedisKey(key);
             var randomStr = DateTime.UtcNow;
 
@@ -32,6 +33,7 @@ namespace RedisCourseRU102N.Strings
         public void BasicSetAndGetWithTTL()
         {
             var key = $"laz:first:Set";
+            _executor.ClearKey(key);
             var homeMadeKey = new RedisKey(key);
             var randomStr = DateTime.UtcNow;
 

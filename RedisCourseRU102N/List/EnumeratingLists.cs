@@ -18,6 +18,7 @@ namespace RedisCourseRU102N.List
             var listOfNames = faker.Generate(10).Select(p => p.FirstName);
 
             var keyOfNames = "firstPeople";
+            _executor.ClearKey(keyOfNames);
 
             _executor.PushRightList(keyOfNames, listOfNames);
 
