@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedisCourseRU102N", "RedisCourseRU102N.csproj", "{7DFF2B9B-55F5-4314-8F69-C76D9D67EA0F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Utility", "..\Utility\Utility.csproj", "{4C7ED527-0D33-4089-A862-FE2181C82A68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "..\Utility\Utility.csproj", "{4C7ED527-0D33-4089-A862-FE2181C82A68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Providers", "..\Providers\Providers.csproj", "{91BA9171-0A24-49A9-A591-F1A944BFA611}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4C7ED527-0D33-4089-A862-FE2181C82A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C7ED527-0D33-4089-A862-FE2181C82A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C7ED527-0D33-4089-A862-FE2181C82A68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91BA9171-0A24-49A9-A591-F1A944BFA611}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91BA9171-0A24-49A9-A591-F1A944BFA611}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91BA9171-0A24-49A9-A591-F1A944BFA611}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91BA9171-0A24-49A9-A591-F1A944BFA611}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

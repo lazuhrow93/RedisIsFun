@@ -92,5 +92,25 @@ namespace RedisCourseRU102N.Controller
         {
             return _redisExecutor.GetRange(new RedisKey(key), start, end);
         }
+
+        public void AddSet(string key, IEnumerable<string> vals)
+        {
+            var rKey = new RedisKey(key);
+            var rVals = vals.Select(s=> new RedisValue(s));
+            _redisExecutor.AddSet(rKey, rVals.ToArray());
+        }
+
+        public IEnumerable<string>? GetSet(string key)
+        {
+            return _redisExecutor.GetSet(new RedisKey(key));
+        }
+
+        public void UnionAndStore(string destination, params string[] sourceKeys)
+        {
+            var redisSourceKeys = sourceKeys.Select(s => new RedisKey(s)).ToArray();
+            var redisDestinationKey = new RedisKey(destination);
+
+            _redisExecutor.UnionAndStore(redisDestinationKey, redisSourceKeys);
+        }
     }
 }

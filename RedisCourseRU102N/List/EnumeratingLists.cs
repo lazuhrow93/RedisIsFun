@@ -24,6 +24,7 @@ namespace RedisCourseRU102N.List
             var subSetOfPeople = _executor.GetRange(keyOfNames, 5, 9);
             var all = _executor.GetRange(keyOfNames, 0, 9);
             Console.WriteLine($"All: {string.Join(", ", all)}");
+
             Console.WriteLine($"Subset: {string.Join(", ", subSetOfPeople)}");
         }
 

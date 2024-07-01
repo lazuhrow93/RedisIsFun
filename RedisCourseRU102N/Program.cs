@@ -15,4 +15,4 @@ var newConfig = new ConfigurationOptions()
 
 var pinger = new AAppController(newConfig);
 //pinger.RunPingApp();
-pinger.EnumerateABasicList();
+pinger.RunActiveAndInactiveSets();

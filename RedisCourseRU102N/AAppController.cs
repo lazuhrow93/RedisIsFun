@@ -2,6 +2,8 @@
 using RedisCourseRU102N.Controller;
 using RedisCourseRU102N.List;
 using RedisCourseRU102N.Pipeline;
+using RedisCourseRU102N.Providers;
+using RedisCourseRU102N.Sets;
 using RedisCourseRU102N.Strings;
 using StackExchange.Redis;
 using System;
@@ -56,9 +58,14 @@ namespace RedisCourseRU102N
             new PushLeftRight(_redisCommandExecutor).RunPushRightAndLeftApp();
         }
 
-        public void EnumerateABasicList()
+        public void RunEnumerateABasicList()
         {
             new EnumeratingLists(_redisCommandExecutor).EnumeratingTheList();
+        }
+
+        public void RunActiveAndInactiveSets()
+        {
+            new ActiveAndInactive(_redisCommandExecutor, new RedisKeyProvider()).RunSetsApp();
         }
     }
 }

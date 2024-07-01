@@ -18,5 +18,8 @@ namespace RedisCourseRU102N.Controller
         void PushRightList(string key, IEnumerable<string> vals);
         string? GetFromList(string key, int index);
         IEnumerable<string>? GetRange(string key, int start, int end);
+        void AddSet(string key, IEnumerable<string> val);
+        IEnumerable<string>? GetSet(string key);
+        void UnionAndStore(string destination, params string[] sourceKeys);
     }
 }

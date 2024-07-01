@@ -79,5 +79,21 @@ namespace RedisCourseRU102N.Controller
             var parsed = Redis.ListRange(key, start, end).Select(r => (string)r!);
             return parsed;
         }
+
+        public void AddSet(RedisKey key, RedisValue[] vals)
+        {
+            Redis.SetAdd(key, vals);
+        }
+
+        public IEnumerable<string>? GetSet(RedisKey redisKey)
+        {
+            var redisvals = Redis.SetScan(redisKey);
+            return Redis.SetScan(redisKey).Select(r => (string)r!);
+        }
+
+        public void UnionAndStore(RedisKey destination, params RedisKey[] sourceKeys)
+        {
+            Redis.SetCombineAndStore(SetOperation.Union, destination, sourceKeys);
+        }
     }
 }

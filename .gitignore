@@ -29,3 +29,5 @@
 /Utility/obj/Utility.csproj.nuget.dgspec.json
 /Utility/obj/project.nuget.cache
 /Utility/obj/project.assets.json
+/Providers/bin/Debug/net7.0
+/Providers/obj
