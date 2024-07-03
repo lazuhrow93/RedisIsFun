@@ -127,5 +127,15 @@ namespace RedisCourseRU102N.Controller
             var redisKey = new RedisKey(key);
             return _redisExecutor.GetAllFieldsOfHash(redisKey);
         }
+
+        public void PrepareScript(string basicScript)
+        {
+            _redisExecutor.AddLuaScript(basicScript);
+        }
+
+        public string? EvaluateScript(object values)
+        {
+            return _redisExecutor.EvaluateScript(values);
+        }
     }
 }

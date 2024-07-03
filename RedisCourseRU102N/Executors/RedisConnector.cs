@@ -1,10 +1,4 @@
 ﻿using StackExchange.Redis;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RedisCourseRU102N.Controller
 {
@@ -12,6 +6,7 @@ namespace RedisCourseRU102N.Controller
     {
         public ConnectionMultiplexer Multiplexor;
         public IDatabase Redis;
+        private LuaScript? _preparedLua;
 
         public RedisConnector(ConfigurationOptions options)
         {
@@ -96,14 +91,26 @@ namespace RedisCourseRU102N.Controller
             Redis.SetCombineAndStore(SetOperation.Union, destination, sourceKeys);
         }
 
-        internal void AddHash(RedisKey redisKey, HashEntry[] hashVals)
+        public void AddHash(RedisKey redisKey, HashEntry[] hashVals)
         {
             Redis.HashSet(redisKey, hashVals);
         }
 
-        internal IEnumerable<string> GetAllFieldsOfHash(RedisKey redisKey)
+        public IEnumerable<string> GetAllFieldsOfHash(RedisKey redisKey)
         {
             return Redis.HashGetAll(redisKey).Select(h => h.ToString());
+        }
+
+        public void AddLuaScript(string script)
+        {
+            _preparedLua = LuaScript.Prepare(script);
+        }
+
+        public string? EvaluateScript(object values)
+        {
+            if (_preparedLua is null)
+                throw new NullReferenceException("Lua script not defined");
+            return Redis.ScriptEvaluate(_preparedLua, values).ToString();
         }
     }
 }
