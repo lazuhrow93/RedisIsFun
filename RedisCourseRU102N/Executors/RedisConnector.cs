@@ -95,5 +95,15 @@ namespace RedisCourseRU102N.Controller
         {
             Redis.SetCombineAndStore(SetOperation.Union, destination, sourceKeys);
         }
+
+        internal void AddHash(RedisKey redisKey, HashEntry[] hashVals)
+        {
+            Redis.HashSet(redisKey, hashVals);
+        }
+
+        internal IEnumerable<string> GetAllFieldsOfHash(RedisKey redisKey)
+        {
+            return Redis.HashGetAll(redisKey).Select(h => h.ToString());
+        }
     }
 }

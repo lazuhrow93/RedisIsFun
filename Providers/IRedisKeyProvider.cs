@@ -2,7 +2,7 @@
 {
     public interface IRedisKeyProvider
     {
-        public string CreateKeyForUser();
-        public string CreateUserOnlineStatusKey(RedisKeyOptions options);
+        public string MasterKey();
+        public string Create(RedisKeyOptions options);
     }
 }

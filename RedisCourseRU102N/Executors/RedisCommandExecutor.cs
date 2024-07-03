@@ -112,5 +112,20 @@ namespace RedisCourseRU102N.Controller
 
             _redisExecutor.UnionAndStore(redisDestinationKey, redisSourceKeys);
         }
+
+        public void AddHash(string person1, Dictionary<string, object> person1Vals)
+        {
+            var redisKey = new RedisKey(person1);
+            var hashVals = person1Vals
+                .Select(d => new HashEntry(d.Key, d.Value.ToString())).ToArray();
+
+            _redisExecutor.AddHash(redisKey, hashVals);
+        }
+
+        public IEnumerable<string> GetAllFieldsOfHash(string key)
+        {
+            var redisKey = new RedisKey(key);
+            return _redisExecutor.GetAllFieldsOfHash(redisKey);
+        }
     }
 }

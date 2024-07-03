@@ -1,5 +1,7 @@
-﻿using RedisCourseRU102N.ConnectingAndPing;
+﻿using Providers.KeyProviderImplementations;
+using RedisCourseRU102N.ConnectingAndPing;
 using RedisCourseRU102N.Controller;
+using RedisCourseRU102N.Hash;
 using RedisCourseRU102N.List;
 using RedisCourseRU102N.Pipeline;
 using RedisCourseRU102N.Providers;
@@ -24,7 +26,7 @@ namespace RedisCourseRU102N
             var answer = Console.ReadLine();
 
             var parsable = Int32.TryParse(answer, out int answer2);
-            while(parsable == false || _possibleAnswersToPrompt.Contains(answer2) == false)
+            while(parsable == false || _options.Contains(answer2) == false)
             {
                 Console.WriteLine("Not a valid answer, please choose a valid answer");
                 answer = Console.ReadLine();
@@ -50,6 +52,8 @@ namespace RedisCourseRU102N
                 case 8: RunEnumerateABasicList();
                     break;
                 case 9: RunSetUnionApp();
+                    break;
+                case 10: RunPeopleLogApp();
                     break;
                 default: throw new NotImplementedException();
             }
@@ -99,30 +103,41 @@ namespace RedisCourseRU102N
 
         public void RunSetUnionApp()
         {
-            new ActiveAndInactive(_redisCommandExecutor, new RedisKeyProvider()).RunSetsApp();
+            new ActiveAndInactive(_redisCommandExecutor, new UserStatusKeyProvider()).RunSetsApp();
+        }
+
+        public void RunPeopleLogApp()
+        {
+            new PeopleLog(_redisCommandExecutor, new PeopleLedgerKeyProvider()).RunPeopleLogApp();
         }
 
         private void PromptUser()
         {
             Console.Write(_prompt);
         }
+        
+        private string _prompt
+        {
+            get
+            {
+                return $"" +
+                        $"Howdy! Welcome to the Redis Fun Server. What do you want to check out?\n" +
+                        $"----------------------------------------------------------------------\n" +
+                        $"{PromptEnty(_options[0], "Basic Ping Server")}" +
+                        $"{PromptEnty(_options[1], "Unpipelined Pinging")}" +
+                        $"{PromptEnty(_options[2], "Pipelined Pinging")}" +
+                        $"{PromptEnty(_options[3], "Explicit Pipelined Pinging")}" +
+                        $"{PromptEnty(_options[4], "Get and Set a String on Redis")}" +
+                        $"{PromptEnty(_options[5], "Get and Set a string on Redis with Time to live (TTL)")}" +
+                        $"{PromptEnty(_options[6], "Basic Push and Left and Right on a List")}" +
+                        $"{PromptEnty(_options[7], "Enumerating a basic list")}" +
+                        $"{PromptEnty(_options[8], "Union on a multiple sets of users")}" +
+                        $"{PromptEnty(_options[9], "Creating a Hashset")}";
+            }
+        }
+        private int[] _options = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 , 10};
 
-        private const string _prompt = $"" +
-            $"Howdy! Welcome to the Redis Fun Server. What do you want to check out?\n" +
-            $"----------------------------------------------------------------------\n" +
-            $"\t1. Basic Ping Server\n" +
-            $"\t2. Unpipelined Pinging\n" +
-            $"\t3. Pipelined Pinging\n" +
-            $"\t4. Explicit Pipelined Pinging\n" +
-            $"\t5. Get and Set a String on Redis\n" +
-            $"\t6. Get and Set a string on Redis with Time to live (TTL)\n" +
-            $"\t7. Basic Push and Left and Right on a List\n" +
-            $"\t8. Enumerating a basic list\n" +
-            $"\t9. Union on a multiple sets of users\n";
-
-        private int[] _possibleAnswersToPrompt = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+        private string PromptEnty(int option, string name)
+            => $"\t{option}. {name}\n";
     }
-
-
-
 }

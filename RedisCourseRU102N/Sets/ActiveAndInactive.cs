@@ -1,6 +1,7 @@
 ﻿using RedisCourseRU102N.Providers;
 using RedisCourseRU102N.Controller;
 using Utility.Faker;
+using static Providers.KeyEnum;
 
 namespace RedisCourseRU102N.Sets
 {
@@ -18,16 +19,16 @@ namespace RedisCourseRU102N.Sets
         public void RunSetsApp()
         {
             var keyOptions = new RedisKeyOptions();
-            var usersMasterKey = _keyProvider.CreateKeyForUser();
+            var usersMasterKey = _keyProvider.MasterKey();
 
-            keyOptions.Status = RedisKeyOptions.UserOnlineStatus.Active;
-            var activeUserKey = _keyProvider.CreateUserOnlineStatusKey(keyOptions);
-            keyOptions.Status = RedisKeyOptions.UserOnlineStatus.InActive;
-            var inactiveUserKey = _keyProvider.CreateUserOnlineStatusKey(keyOptions);
-            keyOptions.Status = RedisKeyOptions.UserOnlineStatus.Online;
-            var onlineUserKey = _keyProvider.CreateUserOnlineStatusKey(keyOptions);
-            keyOptions.Status = RedisKeyOptions.UserOnlineStatus.Offline;
-            var offlineUserKey = _keyProvider.CreateUserOnlineStatusKey(keyOptions);
+            keyOptions.UserOnlineStatus = UserOnlineStatus.Active;
+            var activeUserKey = _keyProvider.Create(keyOptions);
+            keyOptions.UserOnlineStatus = UserOnlineStatus.InActive;
+            var inactiveUserKey = _keyProvider.Create(keyOptions);
+            keyOptions.UserOnlineStatus = UserOnlineStatus.Online;
+            var onlineUserKey = _keyProvider.Create(keyOptions);
+            keyOptions.UserOnlineStatus = UserOnlineStatus.Offline;
+            var offlineUserKey = _keyProvider.Create(keyOptions);
 
             _executor.ClearKey(usersMasterKey,
                 activeUserKey,

@@ -21,5 +21,7 @@ namespace RedisCourseRU102N.Controller
         void AddSet(string key, IEnumerable<string> val);
         IEnumerable<string>? GetSet(string key);
         void UnionAndStore(string destination, params string[] sourceKeys);
+        void AddHash(string person1, Dictionary<string, object> person1Vals);
+        IEnumerable<string> GetAllFieldsOfHash(string person1);
     }
 }
