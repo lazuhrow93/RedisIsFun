@@ -31,3 +31,7 @@
 /Utility/obj/project.assets.json
 /Providers/bin/Debug/net7.0
 /Providers/obj
+/CachingApp]/obj
+/CachingApp]/Properties
+/CachingApp]/appsettings.json
+/CachingApp]/appsettings.Development.json
