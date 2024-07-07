@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utility", "..\Utility\Utili
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Providers", "..\Providers\Providers.csproj", "{91BA9171-0A24-49A9-A591-F1A944BFA611}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CachingApp]", "..\CachingApp]\CachingApp].csproj", "{6A3C9072-9E1D-46AF-9EBE-64522B9BD93D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CachingApp", "..\CachingApp]\CachingApp.csproj", "{6A3C9072-9E1D-46AF-9EBE-64522B9BD93D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
