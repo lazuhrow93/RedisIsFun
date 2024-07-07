@@ -1,9 +1,5 @@
-﻿using RedisCourseRU102N.Providers;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Providers.Interfaces;
+using Providers.Options;
 
 namespace Providers.KeyProviderImplementations
 {
@@ -27,6 +23,11 @@ namespace Providers.KeyProviderImplementations
         private string AppendKey(string source, string key)
         {
             return $"{source}{Delimeter}{key}";
+        }
+
+        public List<LazRedisKey> Create<T>()
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿using RedisCourseRU102N.Controller;
+﻿using Providers.Interfaces;
 using Utility.Faker;
 
 namespace RedisCourseRU102N.List

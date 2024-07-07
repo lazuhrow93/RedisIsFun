@@ -1,0 +1,515 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"today",
+				"today_year"
+			],
+			[
+				"imageRunn",
+				"imageNoRunner"
+			],
+			[
+				"imageRun",
+				"imageRunnerOn"
+			],
+			[
+				"image",
+				"image1stBase"
+			],
+			[
+				"runn",
+				"runner_on_1st"
+			],
+			[
+				"runner",
+				"runner_on_1st"
+			],
+			[
+				"sattus",
+				"status_of_game"
+			],
+			[
+				"team",
+				"team_abrev"
+			],
+			[
+				"tea",
+				"team_abrev"
+			],
+			[
+				"away",
+				"awayScore"
+			],
+			[
+				"Image",
+				"ImageFont"
+			],
+			[
+				"H",
+				"Hits"
+			],
+			[
+				"away_team",
+				"away_team_runs"
+			],
+			[
+				"CURR",
+				"CURRENT_TEAM_AWAY_STATS"
+			],
+			[
+				"CU",
+				"CURRENT_TEAM_AWAY_STATS"
+			],
+			[
+				"CURr",
+				"CURRENT_TEAM_AWAY_STATS"
+			],
+			[
+				"CURRE",
+				"CURRENT_TEAM_AWAY_STATS"
+			],
+			[
+				"satts",
+				"status_of_game"
+			],
+			[
+				"num",
+				"numOfOuts"
+			],
+			[
+				"draw",
+				"drawBlank"
+			],
+			[
+				"dra",
+				"drawBlank"
+			],
+			[
+				"inn",
+				"inning_num"
+			],
+			[
+				"y_",
+				"y_coor_away"
+			],
+			[
+				"check",
+				"check_inning_scores"
+			],
+			[
+				"ch",
+				"check_inning_status"
+			],
+			[
+				"status",
+				"status_of_game"
+			],
+			[
+				"cur",
+				"curr_y"
+			],
+			[
+				"update",
+				"update_batter_status"
+			],
+			[
+				"se",
+				"sequenceNum"
+			],
+			[
+				"display",
+				"display_this_sequence"
+			],
+			[
+				"current",
+				"currentNum"
+			],
+			[
+				"ops_dv",
+				"ops_div3"
+			],
+			[
+				"operation",
+				"operationForNum"
+			],
+			[
+				"opera",
+				"operationForNum"
+			],
+			[
+				"opr",
+				"operationForNum"
+			],
+			[
+				"curre",
+				"currentNum"
+			],
+			[
+				"numO",
+				"numOfCoins"
+			],
+			[
+				"monie",
+				"monies_i"
+			],
+			[
+				"mo",
+				"monies_i"
+			],
+			[
+				"numOfCoins",
+				"numOfCoinsForMoney"
+			],
+			[
+				"cahng",
+				"change_index"
+			],
+			[
+				"cha",
+				"change_array"
+			],
+			[
+				"chan",
+				"change_index"
+			],
+			[
+				"change",
+				"change_array"
+			],
+			[
+				"chang",
+				"change_array"
+			],
+			[
+				"eq",
+				"equal_elements_length"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"test",
+				"test_elem2"
+			],
+			[
+				"test_",
+				"test_elem2"
+			],
+			[
+				"size",
+				"sizeOfarray"
+			],
+			[
+				"major",
+				"majority_value"
+			],
+			[
+				"majorit",
+				"majority_test"
+			],
+			[
+				"new",
+				"newVector1"
+			],
+			[
+				"b",
+				"b_init"
+			],
+			[
+				"wei",
+				"weights"
+			],
+			[
+				"weight",
+				"weight_left"
+			],
+			[
+				"va",
+				"values"
+			],
+			[
+				"mod",
+				"mod_of_sum"
+			],
+			[
+				"fib",
+				"fibArray"
+			],
+			[
+				"remainder",
+				"remainder_element"
+			],
+			[
+				"ram",
+				"remainder_element"
+			],
+			[
+				"remaind",
+				"remainder_element"
+			],
+			[
+				"fibonacci",
+				"fibonacci_fast"
+			],
+			[
+				"length",
+				"lengthOfSequence"
+			],
+			[
+				"fibo",
+				"get_fibonacci_huge_fast"
+			],
+			[
+				"get_fib",
+				"get_fibonacci_huge_fast"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"intsall\t",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Lazaro  Hernandez/Downloads/2022eve/2022HOU.EVA",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/TrendingWorld/Main.py",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/1.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/LargeVertical/original/202.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/index.js",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/config.js",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/rare/707.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/original/701.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/original/703.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/original/704.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/original/705.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/rare/708.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/rare/709.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/rare/710.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/super_rare/716.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/TinyVertical/super_rare/717.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/SmallHorizontal/rare/603.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/10.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/2.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/3.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/4.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/5.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/6.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/7.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/8.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/9.png",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/output/_metadata.json",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/.gitignore",
+		"/C/Users/Lazaro  Hernandez/Documents/ProgrammingProjects/generative-art-opensource/input/ball/original/grey eye ball.png",
+		"/C/Users/Lazaro  Hernandez/Documents/DiscordBots/SpongeBot.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/mlb_led_feed/main.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/MLB_Project/main.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/MLB_Project/Display_Board.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/MLB_Project/Team_Attr.py",
+		"/C/Users/Lazaro  Hernandez/Documents/github/mlb_led_feed/Display_Board.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/MLB_Project/Team_Abrev.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/MLB_Project/mlbFeed.py",
+		"/Z//MakeLEDWork/rpi-rgb-led-matrix/bindings/python/MLB_Project/Display_Board.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/samples/MLB_Project/mlbFeed.py",
+		"/Z//MakeLEDWork/rpi-rgb-led-matrix/bindings/python/samples/MLB_Project/Display_Board.py",
+		"/Z/MLB_LED_scoreboard/Main/mlbFeed.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/Makefile",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/samples/testingoutApi.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/samples/image-draw.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/samples/runtext.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/samples/samplebase.py",
+		"/Z/MakeLEDWork/rpi-rgb-led-matrix/bindings/python/samples/image-viewer.py",
+		"/Z/MLB_LED_scoreboard_2/python/Makefile",
+		"/Z/MLB_LED_scoreboard_2/rpi-rgb-led-matrix/bindings/python/samples/laz_sample.py",
+		"/Z/MLB_LED_scoreboard_2/rpi-rgb-led-matrix/bindings/python/samples/runtext.py",
+		"/Z/MLB_LED_scoreboard_2/rpi-rgb-led-matrix/bindings/python/samples/MyOwnStuff.py",
+		"/Z/delete/test.py",
+		"/Z/MLB_LED_scoreboard_2/python/rgbmatrix/Makefile",
+		"/Z/MLB_LED_scoreboard/Testing/mlbFeed.py",
+		"/Z/MLB_LED_scoreboard/Testing/mlbTest",
+		"/C/Users/Lazaro  Hernandez/Documents/github/mlb_led_feed/mlbFeed.py",
+		"/Z/MLB_LED_scoreboard/mlbFeed.py",
+		"/Z/Desktop/PiProjects/MLB_LED_scoreboard/mlbFeed.py",
+		"/C/Users/Lazaro  Hernandez/Documents/PiProjects/AstrosLiveFeed/Display_CurrentScore.py",
+		"/C/Users/Lazaro  Hernandez/Desktop/Coursera/Proframming specialization/Course_01_Algorithms/Assignment_05/week5_dynamic_programming1/1_money_change_again/change_dp.cpp",
+		"/C/Users/Lazaro  Hernandez/Desktop/Coursera/Proframming specialization/Course_01_Algorithms/Assignment_05/week5_dynamic_programming1/2_primitive_calculator/primitive_calculator.cpp",
+		"/C/Users/Lazaro  Hernandez/Documents/Coursera/SmallestOperations/MinOps.cpp",
+		"/C/Users/Lazaro  Hernandez/Documents/Coursera/CorrectNumofCoins/NumCoins.cpp",
+		"/C/Users/Lazaro  Hernandez/Documents/Coursera/README.md",
+		"/C/Users/Lazaro  Hernandez/Documents/Coursera/ImprovedQuickSort/ImprovedSort.cpp",
+		"/C/Users/Lazaro  Hernandez/Documents/Coursera/MajorityElement/MajorityElement.cpp",
+		"/C/Users/Lazaro  Hernandez/Documents/Coursera/MajorityElement/QuickSortMajorityElement.cpp",
+		"/C/CourseraAss/Assignment02/02_LastDigitFib/FindLastDigitFib.cpp",
+		"/C/CourseraAss/Assignment02/01_FibonacciSequence/FindFibSeq.cpp",
+		"/C/CourseraAss/Assignment01/ProgrammingChallenge/02_MaxPairWise/pairwise_fast.cpp",
+		"/C/Users/Lazaro  Hernandez/Desktop/Coursera/Proframming specialization/Course_01_Algorithms/Assignment_04/week4_divide_and_conquer/3_improving_quicksort/sorting.cpp",
+		"/C/Users/Lazaro  Hernandez/Desktop/Coursera/Proframming specialization/Course_01_Algorithms/Assignment_04/week4_divide_and_conquer/2_majority_element/majority_element.cpp",
+		"/C/Users/Lazaro  Hernandez/Documents/Coursera/BinarySearch/binary_search.cpp",
+		"/C/Users/Lazaro  Hernandez/Documents/Coursera/binary_search.cpp",
+		"/C/CourseraAss/Assignment04/01_BinarySearch/binary_search.cpp",
+		"/C/CourseraAss/Assignment01/ProgrammingChallenge/02_MaxPairWise/pairwise.cpp",
+		"/C/CourseraAss/Assignment02/06_LastDigit_FibSum/LastDigitSumFib.cpp",
+		"/C/CourseraAss/Assignment02/05_FibSeqMod/FindModOfFib.cpp",
+		"/C/CourseraAss/Assignment02/04_LCM/findLCM.cpp",
+		"/C/CourseraAss/Assignment02/03_GCD/FindGCD.cpp",
+		"/C/CourseraAss/Assignment01/ProgrammingChallenge/01_Summation/SumsNums.cpp"
+	],
+	"find":
+	{
+		"height": 31.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "RedisCourseRU102N.sublime-project",
+	"replace":
+	{
+		"height": 58.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

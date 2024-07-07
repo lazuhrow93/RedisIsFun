@@ -1,6 +1,6 @@
 ﻿
 using Providers.ScriptProviderImplementations;
-using RedisCourseRU102N.Controller;
+using Providers.Interfaces;
 
 namespace RedisCourseRU102N.LuaScripts
 {

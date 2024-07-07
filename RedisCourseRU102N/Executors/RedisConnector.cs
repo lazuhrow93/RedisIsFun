@@ -7,6 +7,7 @@ namespace RedisCourseRU102N.Controller
         public ConnectionMultiplexer Multiplexor;
         public IDatabase Redis;
         private LuaScript? _preparedLua;
+        private ITransaction _redisTransaction;
 
         public RedisConnector(ConfigurationOptions options)
         {
@@ -111,6 +112,26 @@ namespace RedisCourseRU102N.Controller
             if (_preparedLua is null)
                 throw new NullReferenceException("Lua script not defined");
             return Redis.ScriptEvaluate(_preparedLua, values).ToString();
+        }
+        
+        public void CreateTransaction()
+        {
+            _redisTransaction = Redis.CreateTransaction();
+        }
+
+        public bool ExecuteTransaction()
+        {
+            return _redisTransaction.Execute();
+        }
+
+        public Task TransactionAddHashAsync(RedisKey redisKey, HashEntry[] hashEntries)
+        {
+            return _redisTransaction.HashSetAsync(redisKey, hashEntries);
+        }
+
+        public async Task<bool> TransactionSortedSetAddAsync(RedisKey redisKey, RedisValue value, int redisScore)
+        {
+            return await _redisTransaction.SortedSetAddAsync(redisKey, value, redisScore);
         }
     }
 }

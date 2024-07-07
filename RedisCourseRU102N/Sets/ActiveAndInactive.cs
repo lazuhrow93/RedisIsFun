@@ -1,7 +1,7 @@
-﻿using RedisCourseRU102N.Providers;
-using RedisCourseRU102N.Controller;
-using Utility.Faker;
+﻿using Utility.Faker;
 using static Providers.KeyEnum;
+using Providers.Interfaces;
+using Providers.Options;
 
 namespace RedisCourseRU102N.Sets
 {

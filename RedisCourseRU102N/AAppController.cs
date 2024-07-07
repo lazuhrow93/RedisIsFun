@@ -5,10 +5,12 @@ using RedisCourseRU102N.Hash;
 using RedisCourseRU102N.List;
 using RedisCourseRU102N.LuaScripts;
 using RedisCourseRU102N.Pipeline;
-using RedisCourseRU102N.Providers;
+using Providers.Interfaces;
 using RedisCourseRU102N.Sets;
 using RedisCourseRU102N.Strings;
+using RedisCourseRU102N.Transactions;
 using StackExchange.Redis;
+using Providers.RedisIndexerImplemenations;
 
 namespace RedisCourseRU102N
 {
@@ -57,6 +59,8 @@ namespace RedisCourseRU102N
                 case 10: RunPeopleLogApp();
                     break;
                 case 11: RunBasicSetScriptApp();
+                    break;
+                case 12: RunBasicTransactionApp();
                     break;
                 default: throw new NotImplementedException();
             }
@@ -119,6 +123,21 @@ namespace RedisCourseRU102N
             new LuaScripting(_redisCommandExecutor).RunBasicSetScriptApp();
         }
 
+        public void RunBasicTransactionApp()
+        {
+            var transactionApp = new TransactionsExersice(_redisCommandExecutor, new ClassDetailsBasedKeyProvider());
+
+            transactionApp.RunSimpleTransactionApp();
+        }
+
+        public void RunConditionalTransactionApp()
+        {
+            var transactionApp = new TransactionsExersice(_redisCommandExecutor, new ClassDetailsBasedKeyProvider());
+
+            transactionApp.RunConditionalTransactionApp();
+
+        }
+
         private void PromptUser()
         {
             Console.Write(_prompt);
@@ -141,10 +160,11 @@ namespace RedisCourseRU102N
                         $"{PromptEnty(_options[7], "Enumerating a basic list")}" +
                         $"{PromptEnty(_options[8], "Union on a multiple sets of users")}" +
                         $"{PromptEnty(_options[9], "Creating a Hashset")}" +
-                        $"{PromptEnty(_options[10], "Running a LuaScript")}";
+                        $"{PromptEnty(_options[10], "Running a LuaScript")}" +
+                        $"{PromptEnty(_options[11], "Running a Basic transaction")}";
             }
         }
-        private int[] _options = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 , 10, 11};
+        private int[] _options = new int[] { 1, 2, 3, 4, 5, 6, 7, 8, 9 , 10, 11, 12};
 
         private string PromptEnty(int option, string name)
             => $"\t{option}. {name}\n";

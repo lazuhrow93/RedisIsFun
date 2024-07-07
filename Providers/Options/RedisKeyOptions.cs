@@ -1,6 +1,6 @@
 ﻿using static Providers.KeyEnum;
 
-namespace RedisCourseRU102N.Providers
+namespace Providers.Options
 {
     public class RedisKeyOptions
     {

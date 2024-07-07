@@ -1,10 +1,5 @@
-﻿using RedisCourseRU102N.ConnectingAndPing;
+﻿using Providers.Interfaces;
 using StackExchange.Redis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RedisCourseRU102N.Controller
 {
@@ -136,6 +131,34 @@ namespace RedisCourseRU102N.Controller
         public string? EvaluateScript(object values)
         {
             return _redisExecutor.EvaluateScript(values);
+        }
+
+        public void CreateTransaction()
+        {
+            _redisExecutor.CreateTransaction();
+        }
+
+        public bool ExecuteTransaction()
+        {
+            return _redisExecutor.ExecuteTransaction();
+        }
+
+        public Task TransactionAddHash(string key, Dictionary<string, object> vals)
+        {
+            var redisKey = new RedisKey(key);
+            var hashEntries = vals
+                .Select(d => new HashEntry(d.Key, d.Value.ToString())).ToArray();
+
+            return _redisExecutor.TransactionAddHashAsync(redisKey, hashEntries);
+        }
+
+        public Task<bool> TransactionAddSortedSet(string key, string val, int score)
+        {
+            var redisKey = new RedisKey(key);
+            var value = new RedisValue(val);
+            var redisScore = score;
+
+            return _redisExecutor.TransactionSortedSetAddAsync(redisKey, value, redisScore);
         }
     }
 }

@@ -1,10 +1,4 @@
-﻿using RedisCourseRU102N.Controller;
-using StackExchange.Redis;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Providers.Interfaces;
 
 namespace RedisCourseRU102N.List
 {

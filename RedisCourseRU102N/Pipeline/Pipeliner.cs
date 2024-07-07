@@ -1,10 +1,5 @@
-﻿using RedisCourseRU102N.Controller;
-using System;
-using System.Collections.Generic;
+﻿using Providers.Interfaces;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RedisCourseRU102N.Pipeline
 {

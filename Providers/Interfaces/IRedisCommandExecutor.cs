@@ -1,6 +1,6 @@
 ﻿using StackExchange.Redis;
 
-namespace RedisCourseRU102N.Controller
+namespace Providers.Interfaces
 {
     public interface IRedisCommandExecutor
     {
@@ -25,5 +25,10 @@ namespace RedisCourseRU102N.Controller
         IEnumerable<string> GetAllFieldsOfHash(string person1);
         void PrepareScript(string basicScript);
         string? EvaluateScript(object values);
+        void CreateTransaction();
+        Task TransactionAddHash(string key, Dictionary<string, object> vals);
+        Task<bool> TransactionAddSortedSet(string key, string val, int score);
+        bool ExecuteTransaction();
+
     }
 }

@@ -1,4 +1,7 @@
-﻿namespace RedisCourseRU102N.Providers
+﻿using Providers.Options;
+using System.Reflection;
+
+namespace Providers.Interfaces
 {
     public interface IRedisKeyProvider
     {

@@ -1,4 +1,5 @@
-﻿using RedisCourseRU102N.Controller;
+﻿using Providers.Interfaces;
+using RedisCourseRU102N.Controller;
 using StackExchange.Redis;
 
 namespace RedisCourseRU102N.ConnectingAndPing
