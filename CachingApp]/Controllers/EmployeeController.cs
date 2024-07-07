@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Distributed;
 
-namespace section3._2.Controllers;
+namespace CachingApp.Controllers;
 
 [ApiController]
 [Route("/api/[controller]")]
